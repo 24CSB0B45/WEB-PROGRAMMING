@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hotel Booking - Heritage Sites of Hyderabad</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #000000;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            color: rgb(239, 84, 6);
+            border: solid 2px white;
+            border-radius: 40px;
+            padding: 10px;
+            background-color: rgb(86, 178, 209);
+        }
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+        }
+        .images {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+        .images img {
+            width: 50%;
+            height: auto;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+        .booking-form {
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            width: 600px; 
+        }
+        .booking-form h2 {
+            color: #00796b;
+        }
+        .booking-form input, .booking-form select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .booking-form button {
+            background-color: #00796b;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .booking-form button:hover {
+            background-color: #004d40;
+        }
+        .footer {
+            background-color: #00796b;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .footer img {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Hotel Booking</h1>
+        <a href="home.html">Home</a>
+        <a href="heritage.html">Heritage</a>
+        <a href="hotelbooking.html">Hotel Booking</a>
+        <a href="gallery.html">Gallery</a>
+    </div>
+    <div class="main">
+        <div class="images">
+            <img src="hotel1.jpeg" alt="hotel">
+            <img src="hotel2.jpg" alt="hotel">
+            <img src="hotel3.jpg" alt="hotel">
+        </div>
+        <div class="booking-form">
+            <h2>Book Your Stay</h2>
+            <form action="submit_booking.php" method="POST">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                
+                <select name="location" required>
+                    <option value="" disabled selected>Select Heritage Site</option>
+                    <option value="charminar">Charminar</option>
+                    <option value="golconda">Golconda Fort</option>
+                    <option value="chowmohalla">Chowmohalla Palace</option>
+                    <option value="qutb_shahi">Qutb Shahi Tombs</option>
+                    <option value="hussain_sagar">Hussain Sagar Lake</option>
+                </select>
+                
+                <input type="date" name="start_date" placeholder="Start Date" required>
+                <input type="date" name="end_date" placeholder="End Date" required>
+                
+                <input type="number" name="guests" placeholder="Number of Guests" min="1" required>
+                
+                <select name="room_type" required>
+                    <option value="" disabled selected>Select Room Type</option>
+                    <option value="single">Single Room</option>
+                    <option value="double">Double Room</option>
+                    <option value="suite">Suite</option>
+                </select>
+                
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <p>FOLLOW US ON</p>
+        <a href="#"><img src="instagram.jpeg" width="30px"></a>
+        <a href="#"><img src="facebook.svg" width="60px"></a>
+        <a href="#"><img src="youtube.png" width="40px"></a>
+        <a href="#"><img src="twitter.png" width="40px"></a>
+    </div>
+</body>
+</html>
