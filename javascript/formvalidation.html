@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<title >
+Registration form
+</title
+<html>
+<style>
+ p,label{
+	font-family: "Courier New", Monospace;
+	color:black;
+    font-weight: bold;
+    font-size: large;
+}
+input{
+    border:solid black 1px;
+    border-radius: 5%;
+}
+</style>
+<script type="text/javascript">
+    function alerting()
+    {
+        const firstname = document.getElementById("firstname").value;
+        const lastname = document.getElementById("lastname").value;
+        const  dob= document.getElementById("dob").value;
+        const emailid = document.getElementById("emailid").value;
+        const mobile = document.getElementById("mobile").value;
+        const idproof = document.getElementById("idproof").value;
+        const address = document.getElementById("address").value;
+        if(!firstname){ alert("Enter your first name");}
+        else if(!lastname){ alert("Enter your last name");}
+        else if(!dob){ alert("Enter your date of birth");}
+        else if(!emailid){ alert("Enter your emailid");}
+        else if(mobile.length!=10){ alert("MOBILE NUMBER MUST BE 10 DIGITS");}
+        else if(!idproof){ alert("Enter your idproof");}
+        else if(!address){ alert("Enter your address");}
+        else {alert("FORM SUBMITTED")}
+
+    }
+</script>
+<body link="green" vlink="blue" alink="red" style="background-color: #8EC5FC;background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);";>
+<center>
+<img src="https://img.collegepravesh.com/2015/08/NIT-Warangal-Logo.png" alt="NITW logo" width=100px>
+<h1 align="center" style="color:black">Registration form</h1>
+</center>
+<form action="">
+<div style="background-color: rgb(219, 203, 53);">
+<marquee style="color:black" direction="left">
+"Registration starts from 1st jan 2025 - Ends on 30th jan - Please register in the time slot alloted"-Director 
+</marquee>
+</div>
+<center>
+<p style="display:inline-block">First name*:</p>
+<input type="text" placeholder="Enter your first name" id="firstname" >
+<br>
+<p style="display:inline-block">Last name*:</p>
+<input type="text" placeholder="Enter your last name" id="lastname">
+<br>
+<p style="display:inline-block">Date of birth*:</p>
+<input type="text" placeholder="Enter your date of birth" id="dob">
+<br>
+<p style="display:inline-block">Email id*:</p>
+<input type="text" placeholder="Enter your email id" id="emailid">
+<br>
+<p style="display:inline-block">Mobile no.*:</p>
+<input type="text" placeholder="Enter your mobile no" id="mobile">
+<br>
+<p style="display:inline-block">ID proof no.*:</p>
+<input type="text" placeholder="Enter your ID no." id="idproof">
+<br>
+<p style="display:inline-block">Address*:</p>
+<input type="text" placeholder="Enter your address" id="address">
+<br>
+<p style="display:inline-block">Select your gender*</p>
+<select>
+<option for="gender">Male</option>
+<option for="gender">Female</option>
+<option for="gender">Other</option>
+</select>
+<br />
+<p style="display:inline-block">Select your age*:</p>
+<input type="radio" name="a"> <label> 1-18 </label> </input>
+<input type="radio" name="a"> <label> 18+ </label> </input>
+<br>
+<p style="display:inline-block">Favourite subjects:</p>
+<input type="checkbox"><label> Maths </label>
+<input type="checkbox"><label> Physics </label>
+<input type="checkbox"><label> Chemistry </label>
+<br>
+<br>
+<button type="button" onclick="alerting()">Submit</button>
+<br>
+<p><a target="_parent" href="https://www.nitw.ac.in/">NITW homepage</a></p>
+</center>
+</form>
+</body>
+</html>
