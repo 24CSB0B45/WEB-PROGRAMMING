@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Toggle and Countdown Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <center>
+        <div>
+            <h1 style="color:aliceblue; background-color:black;">DOM</h1>
+        </div>
+        <div class="container">
+            <h1>Theme Toggle and Countdown Timer</h1>
+            <button id="theme-toggle">Toggle Dark/Light Mode</button>
+            <div class="timer">
+                <h2>Countdown Timer</h2>
+                <input type="number" id="time-input" placeholder="Enter seconds" />
+                <button id="start-btn">Start</button>
+                <button id="pause-btn">Pause</button>
+                <button id="reset-btn">Reset</button>
+                <h3 id="timer-display">00:00</h3>
+            </div>
+            <div class="list-management">
+                <h2>Manage List</h2>
+                <input type="text" id="list-input" placeholder="Enter item" />
+                <button id="add-item-btn">Add Item</button>
+                <button id="sort-btn">Sort Alphabetically</button>
+                <button id="remove-duplicates-btn">Remove Duplicates</button>
+                <button id="reverse-btn">Reverse Order</button>
+                <ul id="item-list"></ul>
+            </div>
+            <div class="table-management">
+                <h2>Dynamic Table</h2>
+                <input type="text" id="name-input" placeholder="Enter name">
+                <button id="add-row-btn">Add Row</button>
+                <table id="data-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="gallery">
+                <h2>Image Gallery</h2>
+                <img src="nature1.jpg" class="thumbnail" alt="Image 1" width="250px">
+                <img src="car.jpg" class="thumbnail" alt="Image 2" width="300px">
+                <div id="modal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="modal-image">
+                </div>
+            </div>
+        </div>
+    </center>
+    <script src="script.js"></script>
+</body>
+</html>
